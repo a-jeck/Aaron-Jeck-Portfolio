@@ -1,4 +1,4 @@
-URL: aaronjeck.com/portfolio/forum
+URL: [aaronjeck.com/portfolio/forum](https://aaronjeck.com/portfolio/forum)
 
 Usage instructions: Create a new user and experiment or view existing user "aaron.jeck@gmail.com" and password".
 
