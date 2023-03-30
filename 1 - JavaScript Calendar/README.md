@@ -1,4 +1,4 @@
-URL: aaronjeck.com/portfolio/calendar
+URL: [aaronjeck.com/portfolio/calendar](https://aaronjeck.com/portfolio/calendar)
 
 Usage instructions: Create a new user and experiment or view existing user "me@aaronjeck.com" with password "password".
 
