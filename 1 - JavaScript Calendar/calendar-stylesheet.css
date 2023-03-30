@@ -1,0 +1,175 @@
+.day,
+.nullday {
+    display: inline-block;
+    border: 1px solid black;
+    width: 13vw;
+    /* height: 6vw; */
+    height: calc(100% - 5px);
+    overflow: auto;
+    /* margin: 10px; */
+    box-sizing: content-box;
+    text-align: left;
+    padding: 2px;
+}
+
+
+button {
+    display: inline-block;
+    box-sizing: content-box;
+
+}
+
+div.body {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#header {
+    text-align: center;
+    margin: 2px;
+
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin:0px;
+}
+
+
+p.weekday {
+    display:inline-block;
+    font-size:18px;
+    width: 13vw;
+    font-weight:400;
+    margin:5px;
+}
+
+
+
+.dayTitle, .dayEvents, .event {
+    display:inline;
+    padding: 0;
+}
+
+.dayTitle{
+    text-align: center;
+    display: block;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.event {
+    background-color: aqua;
+    min-width: 11vw;
+    display:block;
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+}
+
+.newEvent {
+    background-color: blueviolet;
+    display:none;
+    border: 1px solid black;
+}
+
+
+#createEventModal {
+    display: none;
+    z-index: 1;
+    position: fixed;
+    margin: 0 auto;
+    width: 20vw;
+    background-color: white;
+    border: 2px solid rgb(66, 59, 59);
+    padding: 3px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.500);
+    border-radius: 3px;
+}
+
+
+#viewEventModal {
+    display: none;
+    z-index: 1;
+    position: fixed;
+    margin: 0 auto;
+    width: 20vw;
+    background-color: white;
+    border: 2px solid rgb(66, 59, 59);
+    padding: 3px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.500);
+    border-radius: 3px;
+}
+
+.week {
+    margin: 0;
+    height: 7vw;
+}
+
+#viewHeaderTitle {
+    display:inline-block;
+    text-align: left;
+    width:49%;
+
+}
+
+#viewHeaderClose {
+    display: inline-block;
+    text-align:right;
+    width:49%;
+ 
+    
+}
+
+#viewEdit {
+    display:none;
+}
+
+#viewBody {
+    display: block;
+}
+
+.colorEdit, .colorCreate {
+    width:2vw;
+    height:2vw;
+    display:inline-block;
+}
+
+#editColor0, #createColor0 {background-color: #BCE29E;}
+#editColor1, #createColor1 {background-color: #BCCEF8;}
+#editColor2, #createColor2 {background-color: #00bfff;}
+#editColor3, #createColor3 {background-color: #EEE9DA;}
+#editColor4, #createColor4 {background-color: #FF8787;}
+#editColor5, #createColor5 {background-color: #F8C4B4;}
+
+#userButtons, #monthButtons {display:inline;}
+
+.dayNum {
+    display: inline;
+    margin: 0;
+    padding-left:2px;
+    padding-right:2px;
+}
+
+#viewShare {border-top: 1px solid black; padding-top: 2px;}
+
+
+#confetti {
+    position: absolute;
+    display:none;
+}
+
+.confettiParticle {
+    display:none;
+    z-index: 9999;
+    position: absolute;
+    width: 7px;
+    height: 10px;
+    position: absolute;
+    background-color: red;
+    border-radius:2px;
+}
+
+
