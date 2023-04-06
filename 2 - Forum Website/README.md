@@ -1,6 +1,6 @@
 URL: [aaronjeck.com/portfolio/forum](https://aaronjeck.com/portfolio/forum)
 
-Usage instructions: Create a new user and experiment or view existing user "aaron.jeck@gmail.com" and password".
+Usage instructions: Create a new user and experiment or view existing user "me@aaronjeck.com" and password".
 
 My forum website is a web-based application that allows registered users to share and discuss stories. The website's primary feature is the ability for users to post stories consisting of a title, a link, and a body. Once posted, other users can view and comment on the story.
 
