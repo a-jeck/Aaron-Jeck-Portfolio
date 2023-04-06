@@ -81,11 +81,7 @@ if (isset($_SESSION['user_id'])) {
         /// The user has at least 1 comment
         $emptysetpersonal = false;
 
-        /// Forms for editing or deleting each commment
-        // echo 
-        // echo 
-
-
+ 
         /// print author name and date
         $first_name_comment = $row['author_first_name'];
         $last_name_comment = $row['author_last_name'];
@@ -93,8 +89,7 @@ if (isset($_SESSION['user_id'])) {
 
         printf(
             "<td> <h4> %s %s %s %s %s </h4> <br>",
-            //'<a href=" http://ec2-18-219-245-55.us-east-2.compute.amazonaws.com/~aaron/module3/index.php?page_id=profile&user_id=' . $_SESSION['user_id'] . '">',
-	    '<a href="/portfolio/forum/profile/' . $_SESSION['user_id'] . '">',
+            '<a href="/portfolio/forum/profile/' . $_SESSION['user_id'] . '">',
 	    htmlentities($first_name_comment) . " " . htmlentities($last_name_comment),
             '</a>',
             " on ",
@@ -187,8 +182,7 @@ while ($row = $currentcomment->fetch_assoc()) {
 
     printf(
         "<td> <h4> %s %s %s %s %s </h4> <br>",
-        //'<a href=" http://ec2-18-219-245-55.us-east-2.compute.amazonaws.com/~aaron/module3/index.php?page_id=profile&user_id=' . $row['author_id'] . '">',
-	'<a href="/portfolio/forum/profile' . $row['author_id'] . '">',
+	'<a href="/portfolio/forum/profile/' . $row['author_id'] . '">',
 	htmlentities($first_name_comment) . " " . htmlentities($last_name_comment),
         '</a>',
         " on ",

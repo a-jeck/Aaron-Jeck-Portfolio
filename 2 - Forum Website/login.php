@@ -44,7 +44,7 @@
                         // Login succeeded; update user_id & token session and redirect to home
                         $_SESSION['user_id'] = $user_id;
                         $_SESSION['token'] = bin2hex(openssl_random_pseudo_bytes(32));
-			//header('Location: http://ec2-18-219-245-55.us-east-2.compute.amazonaws.com/~aaron/module3/index.php');
+			
 			header('Location: /portfolio/forum/index.php');
                     } else {
                         // Login failed; redirect back to the login screen

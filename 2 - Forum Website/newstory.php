@@ -65,7 +65,7 @@
                     }
 
                     /// Take user to their new story
-                    //header('Location: http://ec2-18-219-245-55.us-east-2.compute.amazonaws.com/~aaron/module3/index.php?page_id=story&story_id=' . $newid);
+
 		    header('Location: /portfolio/forum/story/' . $newid);
 		} else {
                     /// The provided URL is invaldi! Alert the user. 
@@ -80,7 +80,6 @@
         }
         echo '</div></div>';
     } else {
-        //$url = 'http://ec2-18-219-245-55.us-east-2.compute.amazonaws.com/~aaron/module3/index.php?page_id=login';
         echo '<h2> You must <a href="/portfolio/forum/login">login</a> before making a new post! </h2>';
     }
 

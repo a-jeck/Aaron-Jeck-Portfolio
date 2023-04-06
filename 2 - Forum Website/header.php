@@ -39,7 +39,7 @@
                 $get_random->close();
 		echo 'here';
                 /// redirect to random post
-               // header('Location: http://ec2-18-219-245-55.us-east-2.compute.amazonaws.com/~aaron/module3/index.php?page_id=story&story_id=' . $random_id);
+               
 	    header('Location: /portfolio/forum/story/' . $random_id);
 	    }
 
@@ -55,8 +55,7 @@
                 /// When logout is clicked, destroy the session and redirect to the home page. 
                 if (isset($_POST['logout'])) {
                     session_destroy();
-		    //header('Location: http://ec2-18-219-245-55.us-east-2.compute.amazonaws.com/~aaron/module3/index.php');
-		      header('Location: /portfolio/forum');
+		    header('Location: /portfolio/forum');
 		}
             } else {
 
@@ -67,7 +66,6 @@
 
                 /// When login is clicked, redirect user to the login page 
                 if (isset($_POST['login'])) {
-                //    header('Location: http://ec2-18-219-245-55.us-east-2.compute.amazonaws.com/~aaron/module3/index.php?page_id=login');
 			header('Location: /portfolio/forum/login');
 		}
             }
@@ -82,7 +80,6 @@
             <?php
             /// If user clicks home, redirect to homepage
             if (isset($_POST['returnhome'])) {
-                //header('Location: http://ec2-18-219-245-55.us-east-2.compute.amazonaws.com/~aaron/module3/index.php');
 	    	header('Location: /portfolio/forum');
 	    }
             ?>
@@ -96,7 +93,6 @@
 
             /// If user clicks newstory, redirect to newstory.php
             if (isset($_POST['newstory'])) {
-                //header('Location: http://ec2-18-219-245-55.us-east-2.compute.amazonaws.com/~aaron/module3/index.php?page_id=newstory');
 	    	header('Location: /portfolio/forum/newstory');
 	    }
 
@@ -109,7 +105,6 @@
 
                 /// When profile is clicked, redirect to the profile page. 
                 if (isset($_POST['profileviewer'])) {
-                    //header('Location: http://ec2-18-219-245-55.us-east-2.compute.amazonaws.com/~aaron/module3/index.php?page_id=profile&user_id=' . $_SESSION['user_id']);
 			header('Location: /portfolio/forum/profile/' . $_SESSION['user_id']);
 		}
             }

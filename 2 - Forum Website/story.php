@@ -29,7 +29,7 @@ if (!$getstory) {
             '<h4> Posted on: ',
             htmlentities($date),
             ' by ',
-            //'<a href=" http://ec2-18-219-245-55.us-east-2.compute.amazonaws.com/~aaron/module3/index.php?page_id=profile&user_id=' . $author . '">',
+        
 	    '<a href="/portfolio/forum/profile/' . $author . '">',
 	    htmlentities($_SESSION['lookup_name_first']) . " " . htmlentities($_SESSION['lookup_name_last']),
             '</a>',

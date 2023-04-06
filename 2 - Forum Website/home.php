@@ -39,7 +39,7 @@
             printf(
                 '%s %s %s %s ',
                 '<td> <p class="title">',
-                //'<a href=" http://ec2-18-219-245-55.us-east-2.compute.amazonaws.com/~aaron/module3/index.php?page_id=story&story_id=' . $row["post_id"] . '" class="title-link">',
+                
 		'<a href="/portfolio/forum/story/' . $row["post_id"] . '" class="title-link">',
 		htmlentities($truncated_title),
                 '</a> </p>'
@@ -70,7 +70,6 @@
             printf(
                 '%s %s %s %s %s %s%s',
                 '<br> <p class="authordate"> posted by ',
-                //'<a href=" http://ec2-18-219-245-55.us-east-2.compute.amazonaws.com/~aaron/module3/index.php?page_id=profile&user_id=' . $row["author_id"] . '">',
 		'<a href="/portfolio/forum/profile/' . $row["author_id"] . '">',
 		htmlentities($_SESSION['lookup_name_first']) . " " . htmlentities($_SESSION['lookup_name_last']),
                 '</a>',

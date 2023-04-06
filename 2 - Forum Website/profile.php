@@ -53,7 +53,7 @@ if (isset($_POST['apply_edit_bio'])) {
     $edit_bio_sql->close();
 
     /// Take the user back to their page
-    //header('Location: http://ec2-18-219-245-55.us-east-2.compute.amazonaws.com/~aaron/module3/index.php?page_id=profile&user_id=' . $user_id);
+    
     header('Location: /portfolio/forum/profile/' . $user_id);
 }
 
@@ -114,7 +114,7 @@ while ($row = $currentstory->fetch_assoc()) {
     printf(
         '%s %s %s %s ',
         '<td> <p class="title">',
-        //'<a href=" http://ec2-18-219-245-55.us-east-2.compute.amazonaws.com/~aaron/module3/index.php?page_id=story&story_id=' . $row["post_id"] . '" class="title-link">',
+
          '<a href="/portfolio/forum/story/' . $row["post_id"] . '" class="title-link">',
 htmlentities($truncated_title),
         '</a> </p>'

@@ -61,7 +61,7 @@ if (isset($_POST['apply_edit'])) {
     $edit_story_sql->close();
 
     /// Redirect the user to the same page, reloading it and displaying the edited story.
-    //header('Location: http://ec2-18-219-245-55.us-east-2.compute.amazonaws.com/~aaron/module3/index.php?page_id=story&story_id=' . $storyid);
+
 	header('Location: /portfolio/forum/story/' . $storyid . '">');
 }
 
@@ -85,6 +85,5 @@ if (isset($_POST['delete_post'])) {
     $delete_story_sql->close();
 
     /// Redirect the user to their homepage, now without the now deleted post. 
-    //header('Location: http://ec2-18-219-245-55.us-east-2.compute.amazonaws.com/~aaron/module3/index.php?');
 	header('Location: /portfolio/forum');
 }
