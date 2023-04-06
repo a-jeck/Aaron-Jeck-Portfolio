@@ -8,4 +8,3 @@ The application allows users to add new events to the calendar by clicking on a 
 
 The application is built using a combination of technologies, including JavaScript, CSS, PHP, and MySQL. JavaScript is used to create the dynamic and interactive user interface, while CSS is used to style the page. The server-side scripting language, PHP, is used to handle user authentication and manage data storage in MySQL. MySQL is used to store user account information, event details, and other relevant data.
 
-The calendar is hosted on an Apache-based web server on AWS, running Amazon Linux 2. I interface with the server and the data via terminal and phpMyAdmin.
